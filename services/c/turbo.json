@@ -2,7 +2,7 @@
   "extends": ["//"],
   "tasks": {
     "hello": {
-      "inputs": ["!exclude.txt"]
+      "inputs": ["$TURBO_DEFAULT$", "!exclude.txt"]
     }
   }
 }
