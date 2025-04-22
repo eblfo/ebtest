@@ -1,0 +1,23 @@
+{
+  "name": "portal",
+  "version": "1.0.0",
+  "description": "portal repository root",
+  "author": "lightforce",
+  "license": "MIT",
+  "engines": {
+    "node": "18.20.0"
+  },
+  "scripts": {},
+  "private": true,
+  "packageManager": "npm@10.5.0",
+  "devDependencies": {
+    "turbo": "2.5.0"
+  },
+  "workspaces": [
+    "app",
+    "packages/*",
+    "server",
+    "server/src/db",
+    "services/*"
+  ]
+}

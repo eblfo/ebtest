@@ -1,0 +1,20 @@
+{
+  "name": "customer-portal",
+  "version": "0.0.0",
+  "engines": {
+    "node": "18.20.0"
+  },
+  "packageManager": "npm@10.5.0",
+  "scripts": {
+     "hello": "echo hello app"
+  },
+  "private": true,
+  "dependencies": {
+    "@lfo/customer-portal-api": "workspace:*",
+    "@lfo/serverless-lambda-api": "workspace:*"
+  },
+  "devDependencies": {
+  },
+  "overrides": {
+  }
+}
