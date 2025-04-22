@@ -6,7 +6,7 @@
   },
   "packageManager": "npm@10.5.0",
   "scripts": {
-     "hello": "echo hello app"
+     "hello": "echo hello app; ls ."
   },
   "private": true,
   "dependencies": {
