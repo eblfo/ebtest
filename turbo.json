@@ -10,6 +10,7 @@
     "hello": {
       "dependsOn": ["^hello"],
       "outputLogs": "new-only"
+      "outputs": ["dist/**"]
     }
   }
 }

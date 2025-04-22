@@ -6,7 +6,7 @@
   },
   "packageManager": "npm@10.5.0",
   "scripts": {
-     "hello": "echo hello app; ls -la"
+     "hello": "echo hello app; ls -la; mkdir dist; date >dist/bin"
   },
   "private": true,
   "dependencies": {
