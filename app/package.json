@@ -10,8 +10,8 @@
   },
   "private": true,
   "dependencies": {
-    "@lfo/customer-portal-api": "workspace:*",
-    "@lfo/serverless-lambda-api": "workspace:*"
+    "@lfo/customer-portal-api": "*",
+    "@lfo/serverless-lambda-api": "*"
   },
   "devDependencies": {
   },
