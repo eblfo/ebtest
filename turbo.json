@@ -3,7 +3,8 @@
   "ui": "stream",
   "tasks": {
     "hello": {
-      "dependsOn": ["^hello"]
+      "dependsOn": ["^hello"],
+      "outputLogs": "new-only"
     }
   }
 }
