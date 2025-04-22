@@ -9,7 +9,7 @@
   "tasks": {
     "hello": {
       "dependsOn": ["^hello"],
-      "outputLogs": "new-only"
+      "outputLogs": "new-only",
       "outputs": ["dist/**"]
     }
   }
