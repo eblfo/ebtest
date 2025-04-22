@@ -13,7 +13,7 @@
   "typesVersions": {
   },
   "scripts": {
-    "hello": "echo hello packages a"
+    "hello": "echo hello packages a; ls -la"
   },
   "author": "Lightforce",
   "license": "UNLICENSED",
