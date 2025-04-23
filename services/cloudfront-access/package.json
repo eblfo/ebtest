@@ -1,0 +1,16 @@
+{
+  "name": "@lfo/cloudfront-access",
+  "version": "1.0.0",
+  "description": "CloudFront access serverless",
+  "author": "Lightforce",
+  "license": "MIT",
+  "engines": {
+    "node": "18.20.0"
+  },
+  "private": true,
+  "scripts": {
+    "npmCi": "npm ci",
+    "npmInstall": "npm install",
+    "hello": "echo hello cf; ls -la; mkdir dist; date >dist/bin"
+  }
+}

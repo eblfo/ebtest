@@ -1,0 +1,90 @@
+{
+  "name": "@lfo/serverless-lambda-api",
+  "version": "1.0.0",
+  "description": "Serverless lambda functions deployment",
+  "main": "dist/index.js",
+  "private": true,
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "18.20.0"
+  },
+  "scripts": {
+    "npmCi": "npm ci",
+    "npmInstall": "npm install",
+    "hello": "echo hello lambda; ls -la; mkdir dist; date >dist/bin"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@lfo/common": "*",
+    "@lfo/customer-portal-api": "*",
+    "@lfo/geometry-processing": "*",
+    "@lfo/server-core": "*",
+    "@aws-sdk/client-ssm": "3.515.0",
+    "@bugsnag/js": "7.25.0",
+    "@bugsnag/plugin-express": "7.25.0",
+    "@databricks/sql": "1.8.4",
+    "@resvg/resvg-js": "2.6.2",
+    "@supercharge/promise-pool": "2.4.0",
+    "@types/node": "16.18.25",
+    "ajv": "8.6.2",
+    "cors": "2.8.5",
+    "express": "4.16.4",
+    "express-validator": "5.3.1",
+    "gm": "1.23.1",
+    "jspdf": "2.4.0",
+    "lodash": "4.17.21",
+    "mathjs": "9.3.0",
+    "moment": "2.24.0",
+    "moment-timezone": "0.5.34",
+    "morgan": "1.10.0",
+    "pg": "8.6.0",
+    "sequelize": "6.37.5",
+    "source-map-support": "0.5.10",
+    "three": "0.112.1",
+    "unzipper": "0.10.11",
+    "uuid": "3.3.2",
+    "uuid-validate": "0.0.3",
+    "winston": "3.3.3"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "8.10.115",
+    "@types/mocha": "10.0.1",
+    "@types/sinon": "7.0.13",
+    "@types/supertest": "2.0.7",
+    "cross-env": "7.0.3",
+    "lerna-watch": "1.0.0",
+    "mocha": "10.2.0",
+    "mocha-teamcity-reporter": "3.0.0",
+    "nodemon": "2.0.15",
+    "rimraf": "3.0.2",
+    "serverless-http": "2.3.2",
+    "sinon": "7.2.3",
+    "stripe": "8.211.0",
+    "supertest": "3.4.2",
+    "ts-node": "10.9.1",
+    "tslint": "5.12.1",
+    "typescript": "4.9.5"
+  },
+  "optionalDependencies": {
+    "@resvg/resvg-js-linux-x64-musl": "github:lightforceortho/resvg-js-linux-x64-musl#2.6.2"
+  },
+  "nodemonConfig": {
+    "delay": 2000,
+    "exec": "npm run build && npm run serverlessOffline",
+    "ext": "ts,js,json",
+    "ignoreRoot": [
+      ".git"
+    ],
+    "ignore": [
+      "**/*.d.ts"
+    ],
+    "watch": [
+      "lib",
+      "handlers",
+      "node_modules/@lfo/customer-portal-api/dist"
+    ]
+  }
+}

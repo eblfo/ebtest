@@ -1,8 +1,0 @@
-{
-  "extends": ["//"],
-  "tasks": {
-    "hello": {
-      "inputs": ["$TURBO_DEFAULT$", "!exclude.txt"]
-    }
-  }
-}

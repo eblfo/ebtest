@@ -1,0 +1,22 @@
+{
+  "name": "@lfo/animation-recorder",
+  "version": "1.0.0",
+  "scripts": {
+    "npmCi": "npm ci",
+    "npmInstall": "npm install",
+    "hello": "echo hello anim; ls -la; mkdir dist; date >dist/bin"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "ts-node": "10.9.1",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@sparticuz/chromium": "123.0.1",
+    "aws-sdk": "2.1300",
+    "axios": "0.24.0",
+    "puppeteer-core": "22.10.0",
+    "retry-axios": "2.6.0"
+  },
+  "private": true
+}

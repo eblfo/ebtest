@@ -1,0 +1,23 @@
+{
+  "name": "@lfo/backfill",
+  "version": "1.0.0",
+  "scripts": {
+    "npmCi": "npm ci",
+    "npmInstall": "npm install",
+    "hello": "echo hello back; ls -la; mkdir dist; date >dist/bin"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-sqs": "^3.614.0",
+    "@types/aws-lambda": "^8.10.138",
+    "esbuild": "^0.21.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/logger": "^2.1.1",
+    "@aws-sdk/client-secrets-manager": "^3.600.0",
+    "@sparticuz/chromium": "^123.0.1",
+    "puppeteer-core": "^22.10.0",
+    "valibot": "^0.31.1"
+  },
+  "private": true
+}

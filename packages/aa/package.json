@@ -1,0 +1,34 @@
+{
+  "name": "@lfo/geometry-processing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Geometry processing functions using threejs",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "scripts": {
+    "npmCi": "npm ci",
+    "npmInstall": "npm install",
+    "hello": "echo hello aa; ls -la; mkdir dist; date >dist/bin"
+  },
+  "author": "Lightforce",
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "three": "0.112.1"
+  },
+  "devDependencies": {
+    "mocha": "9.1.3",
+    "rimraf": "3.0.2",
+    "three": "0.112.1",
+    "typescript": "4.9.5"
+  },
+  "files": [
+    "dist"
+  ]
+}

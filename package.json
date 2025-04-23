@@ -7,7 +7,10 @@
   "engines": {
     "node": "18.20.0"
   },
-  "scripts": {},
+  "scripts": {
+    "npmCi": "npm ci",
+    "npmInstall": "npm install"
+  },
   "private": true,
   "packageManager": "npm@10.5.0",
   "devDependencies": {
@@ -15,6 +18,8 @@
   },
   "workspaces": [
     "app",
+    "common",
+    "compliance",
     "packages/*",
     "server",
     "server/src/db",

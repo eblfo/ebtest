@@ -1,0 +1,45 @@
+{
+  "name": "@lfo/portal-ecs-api",
+  "version": "1.0.0",
+  "description": "ECS API deployment of the portal server",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": "18.20.0"
+  },
+  "scripts": {
+    "npmCi": "npm ci",
+    "npmInstall": "npm install",
+    "hello": "echo hello api; ls -la; mkdir dist; date >dist/bin"
+  },
+  "author": "Lightforce",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@lfo/common": "*",
+    "@lfo/customer-portal-api": "*",
+    "@lfo/server-core": "*",
+    "@bugsnag/js": "7.25.0",
+    "@bugsnag/plugin-express": "7.25.0",
+    "@types/node": "16.18.25",
+    "aws-sdk": "2.1300.0",
+    "axios": "0.24.0",
+    "content-type": "1.0.4",
+    "express": "4.16.4",
+    "morgan": "1.10.0",
+    "newrelic": "11.15.0",
+    "pg": "8.6.0",
+    "raw-body": "2.4.2",
+    "sequelize": "6.37.5",
+    "winston": "3.3.3"
+  },
+  "devDependencies": {
+    "@types/newrelic": "9.14.3",
+    "rimraf": "3.0.2",
+    "ts-node": "10.9.1",
+    "tslint": "5.12.1",
+    "typescript": "4.9.5"
+  },
+  "private": true
+}
