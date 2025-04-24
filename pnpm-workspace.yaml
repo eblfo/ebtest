@@ -1,0 +1,8 @@
+packages:
+ - app
+ - common
+ - compliance
+ - packages/*
+ - server
+ - server/src/db
+ - services/*

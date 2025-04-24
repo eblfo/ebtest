@@ -7,9 +7,9 @@
   "files": [
   ],
   "engines": {
-    "node": "18.20.0"
+    "node": "20.19.0"
   },
-  "packageManager": "npm@10.5.0",
+  "packageManager": "pnpm@10.9.0",
   "scripts": {
     "npmCi": "npm ci",
     "npmInstall": "npm install",
@@ -18,7 +18,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@lfo/customer-portal-api": "*"
+    "@lfo/customer-portal-api": "workspace:*"
   },
   "lfoDependencies": {
   },

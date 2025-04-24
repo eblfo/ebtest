@@ -5,7 +5,7 @@
   "author": "Lightforce",
   "license": "MIT",
   "engines": {
-    "node": "18.20.0"
+    "node": "20.19.0"
   },
   "private": true,
   "scripts": {

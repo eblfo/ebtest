@@ -3,6 +3,12 @@
   "tasks": {
     "hello": {
       "inputs": ["$TURBO_DEFAULT$", "!exclude.txt"]
+    },
+    "deploy": {
+      "dependsOn": [
+        "@lfo/serverless-lambda-api#deploy",
+        "@lfo/portal-ecs-api#deploy"
+      ]
     }
   }
 }

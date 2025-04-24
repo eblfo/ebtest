@@ -8,7 +8,7 @@
     "dist"
   ],
   "engines": {
-    "node": "18.20.0"
+    "node": "20.19.0"
   },
   "scripts": {
     "npmCi": "npm ci",
@@ -84,8 +84,8 @@
     "uuid": "3.3.2",
     "uuid-validate": "0.0.3",
     "validator": "13.5.2",
-    "@lfo/common": "*",
-    "@lfo/server-core": "*"
+    "@lfo/common": "workspace:*",
+    "@lfo/server-core": "workspace:*"
   },
   "peerDependencies": {
     "@bugsnag/js": "7.25.0",

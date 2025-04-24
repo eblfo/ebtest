@@ -7,7 +7,7 @@
     "dist"
   ],
   "engines": {
-    "node": "18.20.0"
+    "node": "20.19.0"
   },
   "scripts": {
     "npmCi": "npm ci",
@@ -34,7 +34,7 @@
     "@types/aws-lambda": "8.10.17",
     "@types/aws-sdk": "2.7.0",
     "@types/uuid": "8.3.4",
-    "@lfo/server-core": "file:../../packages/lfo-server-core",
+    "@lfo/server-core": "workspace:*",
     "cross-env": "7.0.3",
     "lerna-watch": "1.0.0",
     "mocha": "9.1.3",

@@ -2,18 +2,16 @@
   "name": "customer-portal",
   "version": "0.0.0",
   "engines": {
-    "node": "18.20.0"
+    "node": "20.19.0"
   },
-  "packageManager": "npm@10.5.0",
+  "packageManager": "pnpm@10.9.0",
   "scripts": {
-    "npmCi": "npm ci",
-    "npmInstall": "npm install",
-    "hello": "echo hello app; ls -la; mkdir dist; date >dist/bin"
+    "hello": "echo hello app; ls -la; mkdir dist; date >dist/bin",
+    "deploy": "echo deploy app"
   },
   "private": true,
   "dependencies": {
-    "@lfo/customer-portal-api": "*",
-    "@lfo/serverless-lambda-api": "*",
+    "@lfo/common": "workspace:*",
     "@angular-slider/ngx-slider": "18.0.0",
     "@angular/animations": "18.2.13",
     "@angular/cdk": "18.2.14",

@@ -5,24 +5,16 @@
   "author": "lightforce",
   "license": "MIT",
   "engines": {
-    "node": "18.20.0"
+    "node": "20.19.0"
   },
   "scripts": {
     "npmCi": "npm ci",
     "npmInstall": "npm install"
   },
   "private": true,
-  "packageManager": "npm@10.5.0",
+  "packageManager": "pnpm@10.9.0",
   "devDependencies": {
-    "turbo": "2.5.0"
-  },
-  "workspaces": [
-    "app",
-    "common",
-    "compliance",
-    "packages/*",
-    "server",
-    "server/src/db",
-    "services/*"
-  ]
+    "turbo": "^2.5.0",
+    "pnpm": "^10.9.0"
+  }
 }

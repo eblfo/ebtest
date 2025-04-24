@@ -7,18 +7,13 @@
   "$schema": "https://turbo.build/schema.json",
   "ui": "stream",
   "tasks": {
-    "npmCi": {
-      "dependsOn": ["^npmCi"],
-      "outputLogs": "new-only"
-    },
-    "npmInstall": {
-      "dependsOn": ["^npmInstall"],
-      "outputLogs": "new-only"
-    },
     "hello": {
       "dependsOn": ["^hello"],
       "outputLogs": "new-only",
       "outputs": ["dist/**"]
+    },
+    "deploy": {
+      "outputLogs": "new-only"
     }
   }
 }

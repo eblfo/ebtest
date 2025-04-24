@@ -8,20 +8,19 @@
     "dist"
   ],
   "engines": {
-    "node": "18.20.0"
+    "node": "20.19.0"
   },
   "scripts": {
-    "npmCi": "npm ci",
-    "npmInstall": "npm install",
-    "hello": "echo hello lambda; ls -la; mkdir dist; date >dist/bin"
+    "hello": "echo hello lambda; ls -la; mkdir dist; date >dist/bin",
+    "deploy": "for a in $(seq 1 10); do sleep 1; echo deploying lambda; done"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@lfo/common": "*",
-    "@lfo/customer-portal-api": "*",
-    "@lfo/geometry-processing": "*",
-    "@lfo/server-core": "*",
+    "@lfo/common": "workspace:*",
+    "@lfo/customer-portal-api": "workspace:*",
+    "@lfo/geometry-processing": "workspace:*",
+    "@lfo/server-core": "workspace:*",
     "@aws-sdk/client-ssm": "3.515.0",
     "@bugsnag/js": "7.25.0",
     "@bugsnag/plugin-express": "7.25.0",

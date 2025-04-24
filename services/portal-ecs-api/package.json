@@ -7,19 +7,18 @@
     "dist"
   ],
   "engines": {
-    "node": "18.20.0"
+    "node": "20.19.0"
   },
   "scripts": {
-    "npmCi": "npm ci",
-    "npmInstall": "npm install",
-    "hello": "echo hello api; ls -la; mkdir dist; date >dist/bin"
+    "hello": "echo hello api; ls -la; mkdir dist; date >dist/bin",
+    "deploy": "for a in $(seq 1 10); do sleep 1; echo deploying api; done"
   },
   "author": "Lightforce",
   "license": "UNLICENSED",
   "dependencies": {
-    "@lfo/common": "*",
-    "@lfo/customer-portal-api": "*",
-    "@lfo/server-core": "*",
+    "@lfo/common": "workspace:*",
+    "@lfo/customer-portal-api": "workspace:*",
+    "@lfo/server-core": "workspace:*",
     "@bugsnag/js": "7.25.0",
     "@bugsnag/plugin-express": "7.25.0",
     "@types/node": "16.18.25",
